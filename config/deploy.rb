@@ -16,13 +16,13 @@ set :copy_strategy, :export
 set :deploy_via, :copy
 set :copy_cache, true
 set :copy_exclude, ['.git']
-set :repository, "git@github.com:heuschrecke/#{application}.git"
+set :repository, "git@github.com:elvirabeck-design/#{application}.git"
 
-role :app, 'kraeftemessen.de'
-role :web, 'kraeftemessen.de'
-role :db,  'kraeftemessen.de', :primary => true
+role :app, 'demo.elvirabeck-design-hosting.de-web.biz'
+role :web, 'demo.elvirabeck-design-hosting.de-web.biz'
+role :db,  'demo.elvirabeck-design-hosting.de-web.biz', :primary => true
 
-set :user, 'ssh-xxxxx-df'
+set :user, 'ssh-319885-ebdesign'
 ssh_options[:port] = '22'
 set :ssh_options, { :forward_agent => true }
 
