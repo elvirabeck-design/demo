@@ -18,9 +18,9 @@ set :copy_cache, true
 set :copy_exclude, ['.git']
 set :repository, "git@github.com:elvirabeck-design/#{application}.git"
 
-role :app, 'demo.elvirabeck-design-hosting.de-web.biz'
-role :web, 'demo.elvirabeck-design-hosting.de-web.biz'
-role :db,  'demo.elvirabeck-design-hosting.de-web.biz', :primary => true
+role :app, 'elvirabeck-design-hosting.de-web.biz'
+role :web, 'elvirabeck-design-hosting.de-web.biz'
+role :db,  'elvirabeck-design-hosting.de-web.biz', :primary => true
 
 set :user, 'ssh-319885-ebdesign'
 ssh_options[:port] = '22'
